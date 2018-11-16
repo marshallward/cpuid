@@ -41,6 +41,8 @@ Cpuid * cpuid_create() {
 
     // Set the maxium valid leaf value
     cpu->max_leaf = call_cpuid(0, 0).eax;
+    cpu->max_subleaf = call_cpuid(0x80000000, 0).eax;
+
     get_vendor_id(cpu->vendor_id);
 
     return cpu;

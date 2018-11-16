@@ -3,6 +3,7 @@
 
 typedef struct Cpuid_struct {
     int max_leaf;           // Maximum valid leaf value
+    long max_subleaf;       // Maximum valid subleaf value
     char vendor_id[13];     // Vendor ID string
 } Cpuid;
 
