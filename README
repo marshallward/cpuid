@@ -1,0 +1,7 @@
+A minimal CPUID project
+
+This is just a small project to read and parse the contents of the CPUID
+instruction.
+
+There are several other "libcpuid" style projects, but I am trying a more
+object-oriented approach to see if it adds any value.
